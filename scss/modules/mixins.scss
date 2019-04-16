@@ -1,0 +1,10 @@
+@mixin flex($horizontal, $vertical) {
+    justify-content: $horizontal;
+    align-items:  $vertical;
+}
+@mixin transition($property,$time,$type,$duration){
+    transition-property: $property;
+    transition-timing-function: $time;
+    transition-delay: $type;
+    transition-duration: $duration;
+}

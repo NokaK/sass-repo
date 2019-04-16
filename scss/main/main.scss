@@ -1,0 +1,34 @@
+@import './basic/reset.scss';
+@import './basic/fonts.scss';
+@import './modules/variable.scss';
+@import './modules/classes.scss';
+@import './modules/mixins.scss';
+@import './modules/function.scss';
+
+.header{
+    background-color: $color-red;
+    height: 80px;
+    width: width-box(4px,6px);
+    @extend %container; 
+    .nav{
+        margin-top:10px;
+        .nav-ul{
+            @extend %flex;
+            @include flex(space-between,center);
+            margin:0 15px;
+            a{
+                color:#000;
+                font-size: $font-size-16;
+                @include transition(color,0.5s,linear,0.5s);
+                &:hover{
+                    color:$color-blue;
+                }
+            }
+            &:after{
+                content:"text";
+                display: inline-block;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+
+@function width-box($number1, $number2) {  
+    @return  percentage($number1/$number2) ;
+   }
